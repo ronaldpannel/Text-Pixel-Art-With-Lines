@@ -17,7 +17,7 @@ let pointer = {
 let hue = 0;
 let frameRate = 0;
 
-window.addEventListener("pointermove", function (e) {
+canvas.addEventListener("pointermove", function (e) {
   pointer.x = e.x;
   pointer.y = e.y;
   pointer.radius = 100;
