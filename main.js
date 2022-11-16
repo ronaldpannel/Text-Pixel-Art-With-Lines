@@ -6,13 +6,13 @@ canvas.width = 600;
 canvas.height = 600;
 
 let particleArray = [];
-let adjustX = 1;
-let adjustY = -20;
+let adjustX = 3;
+let adjustY = -21;
 
 let pointer = {
   x: undefined,
   y: undefined,
-  radius: 120,
+  radius: 50,
 };
 let hue = 0;
 let frameRate = 0;
@@ -24,7 +24,7 @@ canvas.addEventListener("pointermove", function (e) {
 });
 
 ctx.fillStyle = "white";
-ctx.font = "25px Verdana";
+ctx.font = "20px Verdana";
 ctx.fillText("B", 0, 40);
 
 const textCoordinates = ctx.getImageData(0, 0, 200, 200);
