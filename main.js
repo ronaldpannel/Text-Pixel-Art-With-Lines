@@ -22,6 +22,11 @@ canvas.addEventListener("pointermove", function (e) {
   pointer.y = e.y;
   pointer.radius = 100;
 });
+canvas.addEventListener("pointerleave", function (e) {
+  pointer.x = undefined
+  pointer.y = undefined
+  
+});
 
 ctx.fillStyle = "white";
 ctx.font = "20px Verdana";
